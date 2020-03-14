@@ -3,22 +3,29 @@
 'use strict';
 
 // このファイルを修正して、プルリクエストしてください。
-var arr_size = prompt("Input the size of the array:");
-var i, j;
-var arr = Array();
+'use strict';
 
-for(i=0; i<arr_size; i++){
-    var flag = true;
-    value = prompt("Input the value of number "+(i+1));
+let i, value, list = "";
+
+function isPrime(value){
     if(value > 2){
-        for(j = 2; j < Math.sqrt(value); j++){
-            if(value % j == 0){
-                flag = false;
-                break;
-            }
+        for(i = 2; i < value; i++){
+            if(value % i == 0)
+                return false;
         }
-        if(flag == true)
-            arr.push(value);
+        return true;
     }
+    else if(value == 2)
+        return true;
+    else
+        return false;
 }
-alert("Prime number in your array: " + arr);
+
+for (value of process.argv.slice(2)){
+    if(isPrime(value))
+        list += value +"; ";
+}
+console.log("List of prime number is: "+list);
+
+
+
