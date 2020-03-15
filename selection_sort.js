@@ -13,7 +13,7 @@ function selectionSort(array) {
     return array;
 }
 (function test() {
-    const testArray = [123, 2, 121, 2, 23]
+    const testArray = process.argv.slice(2);
 
     console.log(selectionSort(testArray))
 })()
