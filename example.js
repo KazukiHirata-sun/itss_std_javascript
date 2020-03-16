@@ -2,10 +2,11 @@
 
 'use strict';
 
-// このファイルを修正して、プルリクエストしてください。
+var res = []
 
-var input = "anh hai long thin";
-var res = input.split(" ");
+for(const arg of process.argv.slice(2)) {
+  res.push(arg)
+}
 res.reverse();
 res.forEach( function(str,index){
     let num = res.length - index;
