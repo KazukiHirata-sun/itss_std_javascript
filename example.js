@@ -8,7 +8,6 @@ for (const arg of process.argv) {
 
 result.reverse();
 result.map((res, index) => {
-    let i = result.length - index
-    console.log(i + "番目は" + res + "です")
+    console.log(result.length - index + "番目は" + res + "です")
 })
 
