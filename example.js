@@ -1,13 +1,9 @@
 #!/usr/bin/env node
 
 'use strict';
-const result = []
-for (const arg of process.argv) {
-    result.push(arg)
-}
+const result = process.argv.slice(2)
 
-result.reverse();
-result.map((res, index) => {
+result.reverse().forEach((res, index) => {
     console.log(result.length - index + "番目は" + res + "です")
 })
 
