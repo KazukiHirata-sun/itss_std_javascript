@@ -6,7 +6,9 @@ for (const arg of process.argv) {
     arr.push(arg);
 }
 
-arr.reverse();
+//arr.reverse();
+console.log(arr);
+console.log(arr[1]);
 let term = 5;
 for (const value of arr) {
     term--;
