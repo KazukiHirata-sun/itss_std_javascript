@@ -10,6 +10,6 @@
   "license": "ISC",
   "preferGlobal": true,
   "bin": {
-    "example": "example.js"
+    "example": "example_4.js"
   }
 }
