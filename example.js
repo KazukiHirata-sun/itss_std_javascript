@@ -1,22 +1,31 @@
 #!/usr/bin/env node
 
 'use strict';
-var arr = []
+#!/usr/bin/env node
 
-for( let a of process.argv.slice(2)){
-    arr.push(parseInt(a))
-}
+'use strict';
 
-for( let i = 0; i < arr.length; i++){
-    for(let j = 0; j < arr.length - i -1; j++){
-        if(arr[j] > arr[j+1]){
-            let temp = arr[j];
-			arr[j] = arr[j + 1];
-			arr[j + 1] = temp;
-        }
+var array = process.argv[2].split('+');
+var string1 = array[0];
+var string2 = array[1].split('=')[0], string3 = array[1].split('=')[1];
+
+var f, g, h;
+var x, counter = 0;
+
+for(let i = 0; i < 10; i++){
+    f = parseInt(string1.replace(/X/g, i));
+    g = parseInt(string2.replace(/X/g, i));
+    h = parseInt(string3.replace(/X/g, i));
+    if( f+g == h){
+        x = i;
+        counter++;
     }
 }
 
-console.log(arr)
+if(counter != 1){
+    console.log('NA');
+} else {
+    console.log(x);
+}
 
 // このファイルを修正して、プルリクエストしてください。
