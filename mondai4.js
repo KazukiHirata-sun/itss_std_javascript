@@ -5,12 +5,17 @@ class day {
         this.d = d;
     }
 }
+//この配列は別々の12月の日数を表す
 const daysPerMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
 //ユーザーの入力したコマンドをy1とy2のコンストラクタに変更する。
 
-var y1 = parseInt(process.argv[2]), m1 = parseInt(process.argv[3]), d1 = parseInt(process.argv[4]);
-var y2 = parseInt(process.argv[5]), m2 = parseInt(process.argv[6]), d2 = parseInt(process.argv[7]);
+var y1 = parseInt(process.argv[2]);
+var m1 = parseInt(process.argv[3]);
+var d1 = parseInt(process.argv[4]);
+var y2 = parseInt(process.argv[5]);
+var m2 = parseInt(process.argv[6]);
+var d2 = parseInt(process.argv[7]);
 
 var time1 = new day(y1, m1, d1);
 var time2 = new day(y2, m2, d2);
