@@ -12,6 +12,6 @@ loop: for (const arg of argv) {
             continue loop;
         i++;
     }
-    result.push(arg);
+    result.push(parseInt(arg));
 }
 console.log(result);
