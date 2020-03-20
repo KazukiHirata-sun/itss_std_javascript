@@ -20,8 +20,8 @@ for(let i = 0; i < 10; i++){
     }
 }
 
-if(counter != 1){
-    console.log('NA');
+if(counter == 1){
+    console.log(x);
 } else {
-     console.log(x);
+    console.log('NA');
 }
