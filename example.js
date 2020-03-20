@@ -1,10 +1,6 @@
 #!/usr/bin/env node
 
 'use strict';
-#!/usr/bin/env node
-
-'use strict';
-
 var array = process.argv[2].split('+');
 var string1 = array[0];
 var string2 = array[1].split('=')[0], string3 = array[1].split('=')[1];
@@ -27,5 +23,3 @@ if(counter != 1){
 } else {
     console.log(x);
 }
-
-// このファイルを修正して、プルリクエストしてください。
