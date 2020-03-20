@@ -12,6 +12,6 @@ const isPrime = num => {
 const arr = [...process.argv.slice(2)]
 let result = []
 
-result = arr.filter(element => isPrime(element))
+result = arr.filter(element => isPrime(element)).map(Number)
 
 console.log(result)
