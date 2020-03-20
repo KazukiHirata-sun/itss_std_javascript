@@ -43,7 +43,7 @@ function dateDiff(date1, date2) {
     n1 += countLeapYear(date1.y, date1.m);
 
     // 0年から Date2 までの日数を計算する
-    var n2 = date2.y*365+date2.d;
+    var n2 = date2.y * 365 + date2.d;
     for(let j = 0; j < date2.m - 1; j++){
         n2 += dayOfMonth[j];
     }
