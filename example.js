@@ -39,6 +39,15 @@ var max=find_max(argv);
 var tmp=min/2 + max/2;
 // console.log(tmp);
 
+function isInt(num)
+{
+  if(parseInt(num)== num)
+  {
+    return true;
+  }
+  return false;
+}
+
 function find_room(argv){
     let i=1;
     var difference=Math.abs(argv[0]-tmp);
@@ -53,7 +62,17 @@ function find_room(argv){
     return index;
 }
 
-var x=find_room(argv);
-console.log(argv[x]);
+
+if(isInt(tmp)){
+    console.log(tmp);
+}
+else{
+    var x=find_room(argv);
+    console.log(argv[x]);
+}
+
+
+
+
 
 
