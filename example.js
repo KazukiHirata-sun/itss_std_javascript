@@ -3,15 +3,13 @@
 // このファイルを修正して、プルリクエストしてください。
 
 var argv = process.argv.slice(2);
-var result = [];
-loop: for (const arg of argv) {
-    if (arg < 2) continue;
-    let i = 2;
-    while (i < arg) {
-        if (arg % i === 0)
-            continue loop;
-        i++;
-    }
-    result.push(parseInt(arg));
+var min = argv[0];
+var max = argv[0];
+for (let i = 1; i < argv.length; i++) {
+    if (argv[i] < min)
+        min = argv[i];
+    else if (argv[i] > max)
+        max = argv[i];
 }
-console.log(result);
+var result = (parseInt(min) + parseInt(max)) / 2;
+console.log(parseInt(result));
