@@ -7,4 +7,12 @@ const isPrimeNumber = number => {
   return true
 }
 
-console.log(process.argv.slice(2).map(el => Number(el)).filter(isPrimeNumber))
+const originalData = process.argv.slice(2)
+
+let outputData = []
+
+for(const element of originalData) {
+  if(isPrimeNumber(element)) outputData.push(Number(element))
+}
+
+console.log(outputData)
