@@ -23,7 +23,3 @@ if(value === null)
 else
     console.log(value);
 
-<<<<<<< HEAD
-=======
-console.log(input.sort(compare));
->>>>>>> 18c9c23... 課題2：完了
