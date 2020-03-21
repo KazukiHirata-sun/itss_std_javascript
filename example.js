@@ -1,20 +1,27 @@
+#!/usr/bin/env node
+
 'use strict';
 
-// このファイルを修正して、プルリクエストしてください。 
-var array = []
+var array = process.argv[2].split('+');
+var f = array[0];
+var g = array[1].split('=')[0];
+var h = array[1].split('=')[1];
 
-for( let arg of process.argv.slice(2)){
-    array.push(parseInt(arg))
-}
+var a, b, c;
+var x, counter = 0;
 
-for( let i = 0; i < array.length; i++){
-    for(let j = 0; j < array.length - i -1; j++){
-        if(array[j] > array[j+1]){
-        	let temp = array[j];
-		array[j] = array[j + 1];
-		array[j + 1] = temp;
-        }
+for(let i = 0; i < 10; i++){
+    a = parseInt(f.replace(/X/g, i));
+    b = parseInt(g.replace(/X/g, i));
+    c = parseInt(h.replace(/X/g, i));
+    if( a+b == c){
+        x = i;
+        counter++;
     }
 }
 
-console.log(array)
+if(counter == 1){
+    console.log(x);
+} else {
+    console.log('NA');
+}
