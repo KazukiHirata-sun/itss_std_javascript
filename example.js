@@ -1,22 +1,12 @@
 #!/usr/bin/env node
 
-"use strict";
+'use strict';
 
 // このファイルを修正して、プルリクエストしてください。
 
-const input = [];
-let result = [];
+const suitableMeetingRoom = occupiedRooms =>
+  Math.floor((Math.min(...occupiedRooms) + Math.max(...occupiedRooms)) / 2);
 
-input.push(...process.argv.slice(2));
-
-input.forEach(element => {
-  let isPrime = true;
-
-  if (element < 2) return;
-
-  for (let i = 2; i <= element / 2; i++) if (element % i == 0) isPrime = false;
-
-  if (isPrime) result.push(element);
-});
-
-console.log(result);
+console.log(
+  suitableMeetingRoom(process.argv.slice(2).map(arg => parseInt(arg)))
+);
