@@ -3,23 +3,11 @@
 'use strict';
 
 // このファイルを修正して、プルリクエストしてください。
-// 課題３
 let argv = process.argv.slice(2)
-let result = []
-
+let b = parseInt(argv[0]), s = parseInt(argv[0])
 for (const arg of argv) {
-    let x = parseInt(arg), flag = true
-    if (!isNaN(x)) {
-        for(let i = 2; i <= x - 1; i++) 
-            if (x % i == 0) { 
-                flag = false; 
-                break; 
-            } 
-    }
-    
-    if (flag) {
-        result.push(x)
-    }
+  let x = parseInt(arg)
+  if (x > b) b = x
+  if (x < s) s = x
 }
-
-console.log(result)
+console.log(Math.floor((b+s)/2))
