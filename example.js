@@ -2,10 +2,12 @@
 
 'use strict';
 
-// このファイルを修正して、プルリクエストしてください。
-let args = process.argv.slice(2);
-let length = args.length;
-for (let i = 0; i < length; i++) {
-	let index = length - 1 - i;
-	console.log(`${index + 1}番目は${args[index]}です`);
-}
+var args = process.argv.slice(2);
+
+var value1 = args[0]+"/"+args[1]+"/"+args[2];
+var value2 = args[3]+"/"+args[4]+"/"+args[5]; 
+var time1 = Date.parse(value1);
+var time2 = Date.parse(value2);
+
+var days = (time2 - time1)/(24*60*60*1000);
+console.log(days);
