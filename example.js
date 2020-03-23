@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 'use strict';
-
 // このファイルを修正して、プルリクエストしてください。
 
 var date1 = (process.argv[2])+'-'+(process.argv[3])+'-'+(process.argv[4]);
