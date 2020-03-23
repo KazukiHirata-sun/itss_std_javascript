@@ -12,9 +12,6 @@ class Date {
         this.m = parseInt(m);
         this.y = parseInt(y);
     }
-    getDate(){
-        return `${this.y}/${this.m}/${this.d}`
-    }
     countDaysFromZero(){
         //1年からこの年までのうるう年の数
         let count_leap_years = parseInt(this.y/4) - parseInt(this.y/100) + parseInt(this.y/400);
@@ -35,11 +32,6 @@ function daysBetweenTwoDates(date1, date2)
   return (date2.countDaysFromZero() - date1.countDaysFromZero());
 }
 
-// var date1 = new Date(process.argv[2], process.argv[3], process.argv[4]);
-// var date2 = new Date(process.argv[5], process.argv[6], process.argv[7]);
-var date1 = new Date(1998, 6, 16);
-var date2 = new Date(2020, 3, 23);
-console.log(date1.getDate());
-console.log(date2.getDate());
-console.log(date1.countDaysFromZero());
+var date1 = new Date(process.argv[2], process.argv[3], process.argv[4]);
+var date2 = new Date(process.argv[5], process.argv[6], process.argv[7]);
 console.log(daysBetweenTwoDates(date1, date2));
