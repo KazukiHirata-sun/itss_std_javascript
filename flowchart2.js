@@ -8,40 +8,36 @@ class Date{
         this.year = year;
         this.totalday = 0;
     }
+
+    getTotalDay(){
+        this.totalday =this.year*365 +this.day; 
+        var years =this.year;
+        var leapyear;
+    
+        //get days from months before present month
+        for (let i=0; i<this.month - 1; i++){
+            this.totalday += monthDays[i];
+        }
+        //find leapyear
+        if (this.month <= 2) 
+            years--;
+        leapyear = Math.floor(years/4) - Math.floor(years/100) +  Math.floor(years/400);
+        return(this.totalday += leapyear); 
+    }
 }
 getNumber();
 
 var date1 = new Date(arr[0],arr[1],arr[2]);
 var date2 = new Date(arr[3],arr[4],arr[5]);
-console.log(Math.abs(getTotalDay(date1) - getTotalDay(date2)));
+
+console.log(Math.abs(date1.getTotalDay() - date2.getTotalDay()));
 
 //take in date from console
 function getNumber(){
-    for (var value of process.argv.slice(2)){
+    for (let value of process.argv.slice(2)){
         arr.push(parseInt(value));
     }
 }
-
-function getTotalDay(date){
-
-    var totalday = date.year*365 + date.day; 
-    var years = date.year;
-    var leapyear;
-
-    //get days from months before present month
-    for (var i=0; i<date.month - 1; i++){
-        totalday += monthDays[i]; 
-    }
-    //find leapyear
-    if (date.month <= 2) 
-        years--;
-    leapyear = Math.floor(years/4) - Math.floor(years/100) +  Math.floor(years/400);
-    return (totalday+leapyear);
-}
- 
-  
-
-
 
 
 
