@@ -1,0 +1,122 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/minhhieu/.nvm/versions/node/v6.17.1/bin/node',
+1 verbose cli   '/home/minhhieu/.nvm/versions/node/v6.17.1/bin/npm',
+1 verbose cli   'link' ]
+2 info using npm@3.10.10
+3 info using node@v6.17.1
+4 verbose linkPkg /mnt/c/Users/Admin/Desktop/Nhật ngành/Homework/week3/itss_std_javascript
+5 silly gentlyRm /home/minhhieu/.nvm/versions/node/v6.17.1/lib/node_modules/itss_std_javascript is being purged
+6 verbose gentlyRm don't care about contents; nuking /home/minhhieu/.nvm/versions/node/v6.17.1/lib/node_modules/itss_std_javascript
+7 silly vacuum-fs purging /home/minhhieu/.nvm/versions/node/v6.17.1/lib/node_modules/itss_std_javascript
+8 silly vacuum-fs quitting because other entries in /home/minhhieu/.nvm/versions/node/v6.17.1/lib/node_modules
+9 verbose link build target /home/minhhieu/.nvm/versions/node/v6.17.1/lib/node_modules/itss_std_javascript
+10 silly loadCurrentTree Starting
+11 silly install loadCurrentTree
+12 silly install readLocalPackageData
+13 silly install normalizeTree
+14 silly loadCurrentTree Finishing
+15 silly loadIdealTree Starting
+16 silly install loadIdealTree
+17 silly cloneCurrentTree Starting
+18 silly install cloneCurrentTreeToIdealTree
+19 silly cloneCurrentTree Finishing
+20 silly loadShrinkwrap Starting
+21 silly install loadShrinkwrap
+22 silly loadShrinkwrap Finishing
+23 silly loadAllDepsIntoIdealTree Starting
+24 silly install loadAllDepsIntoIdealTree
+25 silly loadAllDepsIntoIdealTree Finishing
+26 silly loadIdealTree Finishing
+27 silly currentTree itss_std_javascript@1.0.0
+28 silly idealTree itss_std_javascript@1.0.0
+29 silly generateActionsToTake Starting
+30 silly install generateActionsToTake
+31 silly generateActionsToTake Finishing
+32 silly diffTrees action count 0
+33 silly decomposeActions action count 0
+34 silly runTopLevelLifecycles Starting
+35 silly install runPreinstallTopLevelLifecycles
+36 silly preinstall itss_std_javascript@1.0.0 /mnt/c/Users/Admin/Desktop/Nhật ngành/Homework/week3/itss_std_javascript/itss_std_javascript-2d0d297d
+37 info lifecycle itss_std_javascript@1.0.0~preinstall: itss_std_javascript@1.0.0
+38 silly lifecycle itss_std_javascript@1.0.0~preinstall: no script for preinstall, continuing
+39 silly executeActions Starting
+40 silly install executeActions
+41 silly doSerial global-install 0
+42 silly doParallel fetch 0
+43 verbose correctMkdir /home/minhhieu/.npm/_locks correctMkdir not in flight; initializing
+44 verbose lock using /home/minhhieu/.npm/_locks/staging-badb98862402db3c.lock for /mnt/c/Users/Admin/Desktop/Nhật ngành/Homework/week3/itss_std_javascript/node_modules/.staging
+45 silly doParallel extract 0
+46 silly doParallel preinstall 0
+47 silly doReverseSerial remove 0
+48 silly doSerial move 0
+49 silly doSerial finalize 0
+50 silly doSerial build 0
+51 silly doSerial global-link 0
+52 silly doParallel update-linked 0
+53 silly doSerial install 0
+54 silly doSerial postinstall 0
+55 verbose unlock done using /home/minhhieu/.npm/_locks/staging-badb98862402db3c.lock for /mnt/c/Users/Admin/Desktop/Nhật ngành/Homework/week3/itss_std_javascript/node_modules/.staging
+56 silly executeActions Finishing
+57 silly rollbackFailedOptional Starting
+58 silly rollbackFailedOptional Finishing
+59 silly install runPostinstallTopLevelLifecycles
+60 silly build itss_std_javascript@1.0.0
+61 info linkStuff itss_std_javascript@1.0.0
+62 silly linkStuff itss_std_javascript@1.0.0 has /mnt/c/Users/Admin/Desktop/Nhật ngành/Homework/week3 as its parent node_modules
+63 verbose linkBins itss_std_javascript@1.0.0
+64 verbose linkMans itss_std_javascript@1.0.0
+65 silly install itss_std_javascript@1.0.0 /mnt/c/Users/Admin/Desktop/Nhật ngành/Homework/week3/itss_std_javascript/itss_std_javascript-2d0d297d
+66 info lifecycle itss_std_javascript@1.0.0~install: itss_std_javascript@1.0.0
+67 silly lifecycle itss_std_javascript@1.0.0~install: no script for install, continuing
+68 silly postinstall itss_std_javascript@1.0.0 /mnt/c/Users/Admin/Desktop/Nhật ngành/Homework/week3/itss_std_javascript/itss_std_javascript-2d0d297d
+69 info lifecycle itss_std_javascript@1.0.0~postinstall: itss_std_javascript@1.0.0
+70 silly lifecycle itss_std_javascript@1.0.0~postinstall: no script for postinstall, continuing
+71 silly prepublish itss_std_javascript@1.0.0 /mnt/c/Users/Admin/Desktop/Nhật ngành/Homework/week3/itss_std_javascript/itss_std_javascript-2d0d297d
+72 info lifecycle itss_std_javascript@1.0.0~prepublish: itss_std_javascript@1.0.0
+73 silly lifecycle itss_std_javascript@1.0.0~prepublish: no script for prepublish, continuing
+74 silly runTopLevelLifecycles Finishing
+75 silly install printInstalled
+76 warn itss_std_javascript@1.0.0 No description
+77 verbose If you need help, you may report this error at:
+77 verbose     <https://github.com/npm/npm/issues>
+78 warn itss_std_javascript@1.0.0 No repository field.
+79 verbose If you need help, you may report this error at:
+79 verbose     <https://github.com/npm/npm/issues>
+80 info build /home/minhhieu/.nvm/versions/node/v6.17.1/lib/node_modules/itss_std_javascript
+81 info linkStuff itss_std_javascript@1.0.0
+82 silly linkStuff itss_std_javascript@1.0.0 has /home/minhhieu/.nvm/versions/node/v6.17.1/lib/node_modules as its parent node_modules
+83 silly linkStuff itss_std_javascript@1.0.0 is part of a global install
+84 silly linkStuff itss_std_javascript@1.0.0 is installed into a global node_modules
+85 silly linkStuff itss_std_javascript@1.0.0 is installed into the top-level global node_modules
+86 verbose linkBins itss_std_javascript@1.0.0
+87 verbose link bins [ { example: 'example.js' },
+87 verbose link bins   '/home/minhhieu/.nvm/versions/node/v6.17.1/bin',
+87 verbose link bins   true ]
+88 verbose linkMans itss_std_javascript@1.0.0
+89 silly gentlyRm /home/minhhieu/.nvm/versions/node/v6.17.1/bin/example is being gently removed
+90 silly isEverInside /home/minhhieu/.nvm/versions/node/v6.17.1/bin/example is not inside /mnt/c/Users/Admin/Desktop/Nhật ngành/Homework/week3/itss_std_javascript
+91 silly isEverInside /home/minhhieu/.nvm/versions/node/v6.17.1/lib/node_modules/Homework/example.js is not inside /mnt/c/Users/Admin/Desktop/Nhật ngành/Homework/week3/itss_std_javascript
+92 silly isEverInside /home/minhhieu/.nvm/versions/node/v6.17.1/bin/example is not inside /mnt/c/Users/Admin/Desktop/Nhật ngành/Homework/week3/itss_std_javascript
+93 silly isEverInside /home/minhhieu/.nvm/versions/node/v6.17.1/lib/node_modules/Homework/example.js is not inside /mnt/c/Users/Admin/Desktop/Nhật ngành/Homework/week3/itss_std_javascript
+94 silly gentlyRm parent.path = /mnt/c/Users/Admin/Desktop/Nhật ngành/Homework/week3/itss_std_javascript
+95 silly gentlyRm parent.managed = /mnt/c/Users/Admin/Desktop/Nhật ngành/Homework/week3/itss_std_javascript is in /mnt/c/Users/Admin/Desktop/Nhật ngành/Homework/week3/itss_std_javascript
+96 silly gentlyRm target.path =  /home/minhhieu/.nvm/versions/node/v6.17.1/bin/example
+97 silly gentlyRm target.symlink = ../lib/node_modules/Homework/example.js
+98 silly gentlyRm target.managed = /home/minhhieu/.nvm/versions/node/v6.17.1/bin/example is in /home/minhhieu/.nvm/versions/node/v6.17.1
+99 silly gentlyRm target.inParent =  false
+100 warn gentlyRm not removing /home/minhhieu/.nvm/versions/node/v6.17.1/bin/example as it wasn't installed by /mnt/c/Users/Admin/Desktop/Nhật ngành/Homework/week3/itss_std_javascript
+101 verbose stack Error: EEXIST: file already exists, symlink '../lib/node_modules/itss_std_javascript/example.js' -> '/home/minhhieu/.nvm/versions/node/v6.17.1/bin/example'
+101 verbose stack     at Error (native)
+102 verbose cwd /mnt/c/Users/Admin/Desktop/Nhật ngành/Homework/week3/itss_std_javascript
+103 error Linux 4.4.0-18362-Microsoft
+104 error argv "/home/minhhieu/.nvm/versions/node/v6.17.1/bin/node" "/home/minhhieu/.nvm/versions/node/v6.17.1/bin/npm" "link"
+105 error node v6.17.1
+106 error npm  v3.10.10
+107 error path ../lib/node_modules/itss_std_javascript/example.js
+108 error code EEXIST
+109 error errno -17
+110 error syscall symlink
+111 error EEXIST: file already exists, symlink '../lib/node_modules/itss_std_javascript/example.js' -> '/home/minhhieu/.nvm/versions/node/v6.17.1/bin/example'
+112 error File exists: ../lib/node_modules/itss_std_javascript/example.js
+113 error Move it away, and try again.
+114 verbose exit [ -17, true ]
