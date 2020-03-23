@@ -2,17 +2,35 @@
 
 'use strict';
 
-var arr = process.argv.slice(2);
-for(var i=0; i<arr.length; i++) { 
-    arr[i] = parseInt(arr[i], 10); 
+var test;
+function check(array) {
+  for (const num of array) {
+    let a = parseInt(num);
+    if (a > 20) return 0;
+  }
+  return 1;
 }
-arr = arr.filter((n) => {
-  if (n<2) return false
-    else {
-      for (var i = 2; i <= Math.sqrt(n); i++) {
-        if (n % i === 0) return false;
-      }
-    }
-  return true;
-});
-console.log(arr);
+
+function findMinArray(arr) {
+  return Math.min.apply(null, arr);
+}
+
+function findMaxArray(arr) {
+  return Math.max.apply(null, arr);
+}
+
+function medArray(min, max) {
+  if ((min + max) % 2 == 0) return (min + max) / 2;
+  else return (min + max - 1) / 2;
+}
+let array = process.argv.slice(2);
+
+if ((test = check(array)) == 0) {
+  console.log(`部屋番号の最大値は20`);
+  let array = process.argv.slice(2);
+} else {
+  var min = findMinArray(array);
+  var max = findMaxArray(array);
+  var med = medArray(min, max);
+  console.log(`${med}`);
+}
