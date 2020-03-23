@@ -1,9 +1,13 @@
 #!/usr/bin/env node
 
 'use strict';
-const result = process.argv.slice(2)
+const room = process.argv.slice(2).map((i => parseInt(i))) 
+let max = room[0]
+let min = room[0]
 
-result.reverse().forEach((res, index) => {
-    console.log(result.length - index + "番目は" + res + "です")
+room.forEach((res, index) => {
+    if (min > res) { min = res }
+    if (max < res) { max = res }
 })
+console.log(`${min == 0 ? Math.floor(max/2) : Math.floor((max + min)/2)}`)
 
