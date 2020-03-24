@@ -1,7 +1,8 @@
 'use strict'; 
-var i; 
-for (i=process.argv.length-1;i>=2;i--) 
-{ 
-    console.log((i-1)+"番目は"+process.argv[i]+"です"); 
-    
-}
+var numbers = process.argv.slice(2);
+ 
+// Lấy giá trị lớn nhất và nhỏ nhất
+var max = Math.max.apply(Math, numbers); 
+var min = Math.min.apply(Math, numbers);
+var a = Math.floor((max+min)/2);
+console.log(a);
