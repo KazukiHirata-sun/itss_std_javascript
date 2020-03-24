@@ -2,41 +2,19 @@
 
 'use strict';
 
-var arrStr = process.argv.slice(2);
-
-function selectionSort(arr) {
-    let minIndex, temp,
-        len = arr.length;
-
-    for (let i = 0; i < len; i++) {
-        minIndex = i;
-        // find min number
-        for (let  j = i+1; j < len; j++) {
-            if(arr[j] < arr[minIndex]) {
-                minIndex = j;
-            }
-        }
-
-        // swap
-        temp = arr[i];
-        arr[i] = arr[minIndex];
-        arr[minIndex] = temp;
-    }
-    return arr;
-}
-
-if(arrStr.length === 0){
-    console.log("No number from command line !")
-}
-var arrInt = [];
-for (const arg of arrStr) {
-    if(isNaN(arg)){
-        console.log("Invalid number !")
+var string = process.argv[2]
+let left = string.split('=')[0]
+let right = string.split('=')[1]
+let A = left.split('+')[0]
+let B = left.split('+')[1]
+for (let count=0;count<=9;count++){
+    let a = parseInt(A.replace(/X/gi,count))
+    let b = parseInt(B.replace(/X/gi,count))
+    let c = parseInt(right.replace(/X/gi,count))
+    // console.log(a,b,c)
+    if(a+b==c){
+        console.log("X =", count)
         return;
     }
-
-    let x = parseInt(arg, 10);
-    arrInt.push(x);
 }
-
-console.log(selectionSort(arrInt));
+console.log("NA") 
