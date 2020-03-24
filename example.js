@@ -14,4 +14,5 @@ for (let i = 1; i < argv.length; i++) {
         max = argv[i];
 }
 var result = (parseInt(min) + parseInt(max)) / 2;
-console.log(result)
+console.log(parseInt(result));
+
