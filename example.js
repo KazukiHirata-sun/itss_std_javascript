@@ -2,6 +2,7 @@
 
 'use strict';
 
+<<<<<<< HEAD
 var month = [31,28,31,30,31,30,31,31,30,31,30,31];
 var days1 = process.argv[2] * 365;
 var days2 = process.argv[5] * 365;
@@ -32,3 +33,9 @@ days2 = days2 + leapYears(process.argv[5])
         + getDayOfThisYear(process.argv[5], process.argv[6], process.argv[7]);
 console.log(Math.abs(days1 - days2));
 
+=======
+var len = process.argv.length;
+for(var i=len-1; i>1; i--){
+    console.log((i-1) + "番目は"+process.argv[i]+"です");
+}
+>>>>>>> 8956711186ca2d4ac93ed44a9af91c4a3f64e4e3
