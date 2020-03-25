@@ -3,7 +3,9 @@
 'use strict';
 
 //Mondai 5
-let arrNum = process.argv[2].replace("+", "=").split("=");
+if (process.argv.length < 3) return console.log("Input is invalid !");
+
+const arrNum = process.argv[2].replace("+", "=").split("=");
 
 for (let i = 0; i <= 9; i++) {
   let [firstNum, secondNum, thirdNum] = arrNum.map(num => Number(num.replace(/X/g, i)));
