@@ -1,3 +1,7 @@
+#!/usr/bin/env node
+
+'use strict';
+
 const [first, second, third] =  process.argv.slice(2)[0].replace("+", "=").split("=");
 
 let noAnswer = true
