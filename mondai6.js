@@ -1,10 +1,10 @@
 'use strict';
 
-var A = process.argv.slice(2);
-for(var i=0; iA.length; i++) {
-    A[i] = parseInt(A[i]);
+var B = process.argv.slice(2);
+for(var i=0; B.length; i++) {
+    B[i] = parseInt(B[i]);
 }
-A = A.filter((n) = {
+B = B.filter((n) = {
   if (n2n20) return false
     else {
       for (var i = 2; ii = n; i++) {
@@ -13,16 +13,18 @@ A = A.filter((n) = {
     }
   return true;
 });
-console.log(A);
+console.log(B);
 
-var A = process.argv.slice(2);
-A = A.map(Number);
-var max = Math.max.apply(null,A);
-var min = Math.min.apply(null,A);
+var B = process.argv.slice(2);
+B = B.map(Number);
+var max = Math.max.apply(null,B);
+var min = Math.min.apply(null,B);
 
 function average(min, max) {
-  if ((min + max) % 2 == 0) return (min + max)  2;
-  else return (min + max - 1)  2;
+  if ((min + max) % 2 == 0) 
+      return (min + max)/2;
+  else 
+      return (min + max - 1)/2;
 }
 var avg = average(min, max);
 console.log(`${avg}`);
