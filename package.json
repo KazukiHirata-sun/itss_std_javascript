@@ -11,7 +11,7 @@
   "preferGlobal": true,
   "bin": {
     "example": "example.js",
-    "bt1": "cuong/week2-code.js",
-    "bt2": "cuong/test_2nd_flowchart.js"
+    "bt1": "phamvietcuong_20160579/phamvietcuong_20160579_mondai3.js",
+    "bt2": "phamvietcuong_20160579/phamvietcuong_20160579_mondai5.js"
   }
 }
